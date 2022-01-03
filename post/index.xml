@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Computer Programming for Lawyers</title>
+    <link>https://cp4l.org/post/</link>
+    <description>Recent content in Posts on Computer Programming for Lawyers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>ohm@law.georgetown.edu (Paul Ohm)</managingEditor>
+    <webMaster>ohm@law.georgetown.edu (Paul Ohm)</webMaster>
+    <lastBuildDate>Thu, 07 Jan 2021 14:27:54 -0500</lastBuildDate><atom:link href="https://cp4l.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An introduction to writing Python programs in replit.com</title>
+      <link>https://cp4l.org/post/replit-overview/</link>
+      <pubDate>Thu, 07 Jan 2021 14:27:54 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/replit-overview/</guid>
+      <description>Welcome to Computer Programming for Lawyers!
+Our class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, discussions, and hyperlinks to Zoom sessions. All of your coding (writing, debugging, running, submitting, and grading) will occur in replit.com.
+replit.com is a cloud-based service that lets you write and run code directly in your web browser. It supports more than fifty programming languages, but it originated as a platform for Python, the language we use in this class.</description>
+    </item>
+    
+    <item>
+      <title>Moving the class to repl.it, Part One</title>
+      <link>https://cp4l.org/post/replit-part1/</link>
+      <pubDate>Sat, 02 Jan 2021 13:33:59 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/replit-part1/</guid>
+      <description>As we enter the sixth year for the course, I&amp;rsquo;m contemplating making the biggest move we have made to date: We&amp;rsquo;re probably going to use repl.it to host most of our core infrastructure.
+
+repl.it is a cloud-hosted service that provides a computer programming IDE, complete with interpreters and libraries in a cloud-based Linux environment, accessible in your web browser. Although it now supports more than fifty programming languages, its roots are in Python.</description>
+    </item>
+    
+    <item>
+      <title>The Intermediate Course, Part 1: Goals and Administrative Details</title>
+      <link>https://cp4l.org/post/intermediate/</link>
+      <pubDate>Fri, 18 May 2018 08:19:11 -0400</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/intermediate/</guid>
+      <description>In the Spring 2018 semester, we launched a new innovation: a second course in intermediate computer programming for lawyers. Having just finished teaching this course for the first time, I&amp;rsquo;m going to write (at least) two blog posts about it. In this first post, I&amp;rsquo;m going to go over the administrative nitty gritty, partly to make it available to prospective students in future years who want to learn more about the course.</description>
+    </item>
+    
+    <item>
+      <title>The First Annual Rock, Papers, Scissors Competition for ICPL</title>
+      <link>https://cp4l.org/post/rock-paper-scissors/</link>
+      <pubDate>Thu, 29 Mar 2018 07:43:25 -0400</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/rock-paper-scissors/</guid>
+      <description>This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little about it in this post. For now, I just wanted to share the homework assignment for next week. I owe a special debt of inspiration to contests like this one: rpscontest.com
+This contest is not open to outside submissions!</description>
+    </item>
+    
+    <item>
+      <title>CP4L: The Textbook</title>
+      <link>https://cp4l.org/post/book/</link>
+      <pubDate>Sun, 07 Jan 2018 12:34:38 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/book/</guid>
+      <description>We couldn&amp;rsquo;t find a perfect book for this course*, so we decided to write one! The result is called, quite creatively, _Computer Programming for Lawyers_. Perhaps the very best thing about the book is the striking ASCII Art Jonathan Frankle created, freehand, for the cover:
+Part I of the book introduces the fundamentals of Python in legal practice, while Part II (mostly yet to be written) covers slightly more advanced Python topics.</description>
+    </item>
+    
+    <item>
+      <title>The Administrative Costs of the Course</title>
+      <link>https://cp4l.org/post/admin-needs/</link>
+      <pubDate>Sun, 07 Jan 2018 12:32:38 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/admin-needs/</guid>
+      <description>My primary motivation for creating this blog was to help me respond efficiently to professors and administrators at other law schools who have inquired about the course. I sincerely hope that computer programming will be offered at many other law schools before too long. The startup costs are pretty significant, however, so I wanted to make sure people knew what they were facing.
+Instructor Given the philosophy of the course, it is best to find an instructor who is experienced with both legal practice and computer programming.</description>
+    </item>
+    
+    <item>
+      <title>Graded Problem Sets and the Expectations of Law Students</title>
+      <link>https://cp4l.org/post/problem-sets/</link>
+      <pubDate>Sun, 07 Jan 2018 12:06:22 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/problem-sets/</guid>
+      <description>The two people who devised this course&amp;ndash;Jonthan Frankle and I&amp;ndash;both studied computer programming in college (he much more recently than I) and took from those experiences the critical importance of weekly, graded problem sets. Students in this class must complete a problem set every week of the semester. These are calibrated to be quite tricky, full of small details and annoying little edge cases that require time and hard work to perfect.</description>
+    </item>
+    
+    <item>
+      <title>The Team</title>
+      <link>https://cp4l.org/post/team/</link>
+      <pubDate>Sat, 06 Jan 2018 13:14:11 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/team/</guid>
+      <description>Computer Programming for Lawyers at Georgetown Law is headed by Professor Paul Ohm.
+Running this course requires a small army of people. This page will list everybody who has helped create or maintain the course and will serve as an archive of personnel from the past.
+Jonathan Frankle: My true partner in crime, Jonathan created the course with me and co-taught it the first time it was offered, in Spring 2016.</description>
+    </item>
+    
+    <item>
+      <title>FAQ: Shouldn&#39;t practicing lawyers just hire programmers?</title>
+      <link>https://cp4l.org/post/faq-leave-coding-to-the-experts/</link>
+      <pubDate>Sat, 06 Jan 2018 12:28:51 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/faq-leave-coding-to-the-experts/</guid>
+      <description>FAQ: Rather than teach lawyers to write programs themselves, why not encourage them to hire professional programmers?
+The benefits of programming for legal practice I am touting could probably also be realized by lawyers and programmers working together. As such, some people have asked me, isn&amp;rsquo;t it more realistic and more productive to encourage lawyers to hire programmers? I don&amp;rsquo;t think so, for many reasons:
+First, trained programmers command very high pay for their work, even more than starting lawyers in many cases.</description>
+    </item>
+    
+    <item>
+      <title>FAQ: Why can&#39;t students just take computer programming in another department?</title>
+      <link>https://cp4l.org/post/faq-across-campus/</link>
+      <pubDate>Sat, 06 Jan 2018 12:14:45 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/faq-across-campus/</guid>
+      <description>FAQ: Why do we need to teach this class inside a law school? Shouldn&amp;rsquo;t we partner with professionals who know how to teach computer programming across campus?
+This is perhaps my most frequently asked question. I have many responses.
+Most importantly, there are tons of other ways a law student or lawyer can learn to code. If a law student can take a programming course across campus in computer science or engineering or some other departments, it might be a great fit for her or him.</description>
+    </item>
+    
+    <item>
+      <title>Side Effects May Include...</title>
+      <link>https://cp4l.org/post/side-effect-benefits/</link>
+      <pubDate>Sat, 06 Jan 2018 12:02:41 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/side-effect-benefits/</guid>
+      <description>Now that I have presented the goals for this course&amp;ndash;making lawyers more efficient by teaching them how to code&amp;ndash;let me distinguish other goals that are not my central goals for this course but may be pleasant side effects of becoming a computer programmer.
+To be clear, I don&amp;rsquo;t have any problem with these admirable goals. Deep down, I hope many of my students will achieve these goals as a side-effect of this course, or because this course spurs future study.</description>
+    </item>
+    
+    <item>
+      <title>The Philosophy of the Course</title>
+      <link>https://cp4l.org/post/philosophy/</link>
+      <pubDate>Sat, 06 Jan 2018 12:01:41 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/philosophy/</guid>
+      <description>Every time I teach Computer Programming for Lawyers, I start with the same first line, &amp;ldquo;This is an argument in the form of a course.&amp;rdquo;
+The argument, I explain, is that every single lawyer&amp;ndash;regardless of area of substantive speciality or style of practice&amp;ndash;could become a more efficient lawyer if they learned some rudimentary computer programming skills.
+The argument builds on the observation that every lawyer processes information as a part of their job.</description>
+    </item>
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>https://cp4l.org/post/helloworld/</link>
+      <pubDate>Sat, 06 Jan 2018 11:41:23 -0500</pubDate>
+      <author>ohm@law.georgetown.edu (Paul Ohm)</author>
+      <guid>https://cp4l.org/post/helloworld/</guid>
+      <description>My name is Paul Ohm. I am a professor of law at the Georgetown University Law Center, in Washington, DC. Since 2016, I have taught a course called &amp;ldquo;Computer Programming for Lawyers&amp;rdquo;, which trains future lawyers to be (barely competent) computer programmers. The course is a joint creation with the inimitable Jonathan Frankle, now a Ph.D student at MIT. The course has been very popular, always filling every seat and generating long waitlists.</description>
+    </item>
+    
+  </channel>
+</rss>

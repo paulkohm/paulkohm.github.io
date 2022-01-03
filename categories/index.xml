@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Computer Programming for Lawyers</title>
+    <link>https://cp4l.org/categories/</link>
+    <description>Recent content in Categories on Computer Programming for Lawyers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>ohm@law.georgetown.edu (Paul Ohm)</managingEditor>
+    <webMaster>ohm@law.georgetown.edu (Paul Ohm)</webMaster><atom:link href="https://cp4l.org/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

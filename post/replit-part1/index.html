@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Moving the class to repl.it, Part One - Computer Programming for Lawyers</title>
+  <meta name="description" content="As we enter the sixth year for the course, I&rsquo;m contemplating making the biggest move we have made to date: We&rsquo;re probably going to use repl.it to host most of our core infrastructure.
+
+repl.it is a cloud-hosted service that provides a computer programming IDE, complete with interpreters and libraries in a cloud-based Linux environment, accessible in your web browser. Although it now supports more than fifty programming languages, its roots are in Python.">
+  <meta name="author" content="Paul Ohm"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Computer Programming for Lawyers",
+    
+    "url": "https:\/\/cp4l.org"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/cp4l.org"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/cp4l.org",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/cp4l.org\/post\/replit-part1\/",
+          "name": "Moving the class to repl.it, part one"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Paul Ohm"
+  },
+  "headline": "Moving the class to repl.it, Part One",
+  "description" : "As we enter the sixth year for the course, I\u0026rsquo;m contemplating making the biggest move we have made to date: We\u0026rsquo;re probably going to use repl.it to host most of our core infrastructure.\n\nrepl.it is a cloud-hosted service that provides a computer programming IDE, complete with interpreters and libraries in a cloud-based Linux environment, accessible in your web browser. Although it now supports more than fifty programming languages, its roots are in Python.",
+  "inLanguage" : "en",
+  "wordCount":  371 ,
+  "datePublished" : "2021-01-02T13:33:59",
+  "dateModified" : "2021-01-02T13:33:59",
+  "image" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/cp4l.org\/post\/replit-part1\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/cp4l.org",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Moving the class to repl.it, Part One" />
+<meta property="og:description" content="As we enter the sixth year for the course, I&rsquo;m contemplating making the biggest move we have made to date: We&rsquo;re probably going to use repl.it to host most of our core infrastructure.
+
+repl.it is a cloud-hosted service that provides a computer programming IDE, complete with interpreters and libraries in a cloud-based Linux environment, accessible in your web browser. Although it now supports more than fifty programming languages, its roots are in Python.">
+<meta property="og:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+<meta property="og:url" content="https://cp4l.org/post/replit-part1/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Computer Programming for Lawyers" />
+
+  <meta name="twitter:title" content="Moving the class to repl.it, Part One" />
+  <meta name="twitter:description" content="As we enter the sixth year for the course, I&rsquo;m contemplating making the biggest move we have made to date: We&rsquo;re probably going to use repl.it to host most of our core infrastructure. …">
+  <meta name="twitter:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@@paulohm" />
+  <meta name="twitter:creator" content="@@paulohm" />
+  <link href='https://cp4l.org/images/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="alternate" href="https://cp4l.org/index.xml" type="application/rss+xml" title="Computer Programming for Lawyers"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://cp4l.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://cp4l.org/css/syntax.css" /><link rel="stylesheet" href="https://cp4l.org/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cp4l.org">Computer Programming for Lawyers</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="The Team" href="/post/team/">The Team</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Computer Programming for Lawyers" href="https://cp4l.org">
+            <img class="avatar-img" src="https://cp4l.org/images/logo_white_on_blue.jpg" alt="Computer Programming for Lawyers" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Moving the class to repl.it, Part One</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 2, 2021
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Paul Ohm
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>As we enter the sixth year for the course, I&rsquo;m contemplating making the biggest move we have made to date: We&rsquo;re probably going to use <a href="https://repl.it">repl.it</a> to host most of our core infrastructure.</p>
+<p><a href="https://repl.it"><img src="/images/replit_logo.png" alt="repl.it logo"></a></p>
+<p><a href="https://repl.it">repl.it</a> is a cloud-hosted service that provides a computer programming IDE, complete with interpreters and libraries in a cloud-based Linux environment, accessible in your web browser. Although it now supports more than fifty programming languages, its roots are in Python.</p>
+<p>This might be a game changer for this class: with <a href="https://repl.it">repl.it</a>, students will no longer need to install Python or a text editor on their own computers; everything will live in the cloud. <a href="https://repl.it">repl.it</a> will also simplify problem set submission, commenting, and grading.</p>
+<p>I&rsquo;ve decided to make this big switch after playing with <a href="https://repl.it">repl.it</a> for only a week, because it has made such an amazing first impression on me. At the same time, there will be pain in this move, some inherent to disrupting a stable status quo, but some due to problems with <a href="https://repl.it">repl.it</a> itself, problems I can already perceive after only a week. These problems range from minor annoyances to major difficulties. Some of the problems stem from the <a href="https://repl.it">repl.it</a> way of doing things, complete with jargon and approaches that seem foreign to this experienced programmer.</p>
+<p>Annoyance #1: For example, a &ldquo;repl&rdquo; is their word for a programming project, in other words a directory (or tree of directories) full of related files that all contribute to a single, unified &ldquo;program.&rdquo; It&rsquo;s pretty far afield from the original <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">meaning of the acrynoym</a>!</p>
+<p>As I work through these issues, I have decided to write blog posts documenting the journey. I imagine many other programming teachers are gearing up for the spring semester at this time, and others might be looking at <a href="https://repl.it">repl.it</a>. I am hoping my insights might prove useful to some of them. I will also use these blog posts to coordinate with my TAs and students, and to memorialize my thought process for the future.</p>
+<p>Aside from being a paying customer, I have no relationship with the people who run <a href="https://repl.it">repl.it</a>. If they want to throw me some service credits to thank me for the unsolicited marketing, they should feel free to reach out to me!</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://cp4l.org/post/intermediate/" data-toggle="tooltip" data-placement="top" title="The Intermediate Course, Part 1: Goals and Administrative Details">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://cp4l.org/post/replit-overview/" data-toggle="tooltip" data-placement="top" title="An introduction to writing Python programs in replit.com">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:ohm@law.georgetown.edu" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/paulkohm" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/@paulohm" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://paulohm.com">Paul Ohm</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cp4l.org">Computer Programming for Lawyers</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cp4l.org/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://cp4l.org/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

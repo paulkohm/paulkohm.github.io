@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cp4l.org/</loc>
+    <lastmod>2021-01-07T14:27:54-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/replit-overview/</loc>
+    <lastmod>2021-01-07T14:27:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/</loc>
+    <lastmod>2021-01-07T14:27:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/replit-part1/</loc>
+    <lastmod>2021-01-02T13:33:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/intermediate/</loc>
+    <lastmod>2018-05-18T08:19:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/rock-paper-scissors/</loc>
+    <lastmod>2018-03-29T07:43:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/book/</loc>
+    <lastmod>2018-01-07T12:34:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/admin-needs/</loc>
+    <lastmod>2018-01-07T12:32:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/problem-sets/</loc>
+    <lastmod>2018-01-07T12:06:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/team/</loc>
+    <lastmod>2018-01-06T13:14:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/faq-leave-coding-to-the-experts/</loc>
+    <lastmod>2018-01-06T12:28:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/faq-across-campus/</loc>
+    <lastmod>2018-01-06T12:14:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/side-effect-benefits/</loc>
+    <lastmod>2018-01-06T12:02:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/philosophy/</loc>
+    <lastmod>2018-01-06T12:01:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/post/helloworld/</loc>
+    <lastmod>2018-01-06T11:41:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cp4l.org/tags/</loc>
+  </url>
+  
+</urlset>

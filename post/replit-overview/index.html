@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>An introduction to writing Python programs in replit.com - Computer Programming for Lawyers</title>
+  <meta name="description" content="Welcome to Computer Programming for Lawyers!
+Our class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, discussions, and hyperlinks to Zoom sessions. All of your coding (writing, debugging, running, submitting, and grading) will occur in replit.com.
+replit.com is a cloud-based service that lets you write and run code directly in your web browser. It supports more than fifty programming languages, but it originated as a platform for Python, the language we use in this class.">
+  <meta name="author" content="Paul Ohm"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Computer Programming for Lawyers",
+    
+    "url": "https:\/\/cp4l.org"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/cp4l.org"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/cp4l.org",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/cp4l.org\/post\/replit-overview\/",
+          "name": "An introduction to writing python programs in replit.com"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Paul Ohm"
+  },
+  "headline": "An introduction to writing Python programs in replit.com",
+  "description" : "Welcome to Computer Programming for Lawyers!\nOur class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, discussions, and hyperlinks to Zoom sessions. All of your coding (writing, debugging, running, submitting, and grading) will occur in replit.com.\nreplit.com is a cloud-based service that lets you write and run code directly in your web browser. It supports more than fifty programming languages, but it originated as a platform for Python, the language we use in this class.",
+  "inLanguage" : "en",
+  "wordCount":  1280 ,
+  "datePublished" : "2021-01-07T14:27:54",
+  "dateModified" : "2021-01-07T14:27:54",
+  "image" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/cp4l.org\/post\/replit-overview\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/cp4l.org",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="An introduction to writing Python programs in replit.com" />
+<meta property="og:description" content="Welcome to Computer Programming for Lawyers!
+Our class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, discussions, and hyperlinks to Zoom sessions. All of your coding (writing, debugging, running, submitting, and grading) will occur in replit.com.
+replit.com is a cloud-based service that lets you write and run code directly in your web browser. It supports more than fifty programming languages, but it originated as a platform for Python, the language we use in this class.">
+<meta property="og:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+<meta property="og:url" content="https://cp4l.org/post/replit-overview/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Computer Programming for Lawyers" />
+
+  <meta name="twitter:title" content="An introduction to writing Python programs in replit.com" />
+  <meta name="twitter:description" content="Welcome to Computer Programming for Lawyers!
+Our class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, …">
+  <meta name="twitter:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@@paulohm" />
+  <meta name="twitter:creator" content="@@paulohm" />
+  <link href='https://cp4l.org/images/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="alternate" href="https://cp4l.org/index.xml" type="application/rss+xml" title="Computer Programming for Lawyers"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://cp4l.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://cp4l.org/css/syntax.css" /><link rel="stylesheet" href="https://cp4l.org/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cp4l.org">Computer Programming for Lawyers</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="The Team" href="/post/team/">The Team</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Computer Programming for Lawyers" href="https://cp4l.org">
+            <img class="avatar-img" src="https://cp4l.org/images/logo_white_on_blue.jpg" alt="Computer Programming for Lawyers" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>An introduction to writing Python programs in replit.com</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 7, 2021
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Paul Ohm
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Welcome to Computer Programming for Lawyers!</p>
+<p>Our class will make heavy use of on two online services, Canvas (with Panopto) and replit.com. Canvas and Panopto will be where you will find videos, discussions, and hyperlinks to Zoom sessions. All of your coding (writing, debugging, running, submitting, and grading) will occur in <a href="https://replit.com">replit.com</a>.</p>
+<p><a href="https://replit.com">replit.com</a> is a cloud-based service that lets you write and run code directly in your web browser. It supports more than fifty programming languages, but it originated as a platform for Python, the language we use in this class.</p>
+<h1 id="setting-up-a-replitcom-account-and-connecting-to-the-class-account">Setting up a Replit.com account and connecting to the class account</h1>
+<p>Visit <a href="https://replit.com/signup">https://replit.com/signup</a> and follow the prompts to create a user account using your Georgetown Google account (click the Google icon).</p>
+<p>Once you&rsquo;re done, hit the <code>+ New repl</code> button in the top left. Choose to create a new Python project. replit.com will automatically choose a random name for your project, or you can pick one yourself. Note that by default your repl will be public to anyone on the internet; this is great for sharing and collaboration, but we&rsquo;ll have to be careful to not include passwords or other sensitive information in any of our projects.</p>
+<p>Once your project is created, you&rsquo;ll be taken to a new view with several panes. Let&rsquo;s take a look at what these are.</p>
+<h1 id="understanding-the-replitcom-panes">Understanding the replit.com panes</h1>
+<p>replit.com provides what is known as an Integrated Development Environment, or IDE. The main user interface, which you will stare at for dozens of hours this semester, looks like this:</p>
+<p><img src="/images/replit/01-replpanes.png" alt="replit.com panes"></p>
+<ol>
+<li>Left pane: files and configuration. This, by default, shows all the files that make up your project. Sometimes we will give you a few files to use as a starting point. Other times, you will create new projects from scratch, starting with a single file called main.py.</li>
+<li>Middle pane: code editor. You&rsquo;ll probably spend most of your time using this pane. It&rsquo;s a text editor where you can write code. In the screenshot, we&rsquo;ve added two lines of Python code.</li>
+<li>Right pane: output sandbox. This is where you&rsquo;ll see your code in action. All output that your program produces will appear in this pane, and it also acts as a quick sandbox to run small pieces of code, which we&rsquo;ll look at more later.</li>
+<li>Run button. If you click the big green run button, your code will be executed and the output will appear on the right.</li>
+<li>Menu bar. This lets you control what you see in the main left pane (pane 1). By default, you&rsquo;ll see the files that make up your project but you can use this bar to view other things here too by clicking on the various icons. We&rsquo;ll take a look at these options later.</li>
+</ol>
+<h1 id="running-code-from-a-file">Running code from a file</h1>
+<p>Usually, you&rsquo;ll enter your code as text in a file, and run it from there. Let&rsquo;s do this now. Enter the following code in the middle pane (pane 2), and hit the run button.</p>
+<pre><code>print(&quot;Hello World&quot;)
+print(1+2)
+</code></pre>
+<p><img src="/images/replit/01-codeoutput.png" alt="replit.com Hello World"></p>
+<p>Your script will run and the output it generates will appear on the right pane (pane 3). Our code output the phrase &ldquo;Hello World&rdquo; (it&rsquo;s a long-standing tradition that the first program you write prints the string &lsquo;hello world&rsquo;), and then output the answer to the sum 1 + 2.</p>
+<p>If you got your screen to look like this image, congratulations! You&rsquo;ve taken your first step to becoming a computer programmer!</p>
+<h1 id="running-code-from-replitcoms-repl">Running code from replit.com&rsquo;s REPL</h1>
+<p>In computer programming, a REPL is a read-eval-print loop, and a REPL interface is often the simplest way to run short computer programs (and where replit.com got its name).</p>
+<p>While in the previous example we saved our code to a file and then executed the file, it&rsquo;s sometimes quicker to execute code directly.</p>
+<p>You can type code in the right-hand pane (pane 3) and press the &ldquo;Enter&rdquo; key to run it. Take a look at the example below where we print &ldquo;Hello World&rdquo; again and do a different sum, without changing our code file.</p>
+<p><img src="/images/replit/01-reploutput.png" alt="replit.com REPL"></p>
+<p>This is useful for prototyping or checking how things work, but for any serious program you write you&rsquo;ll want to be able to save it, and that means writing the code in a file like in our earlier example.</p>
+<p>In this class, we will spend a lot of time during lecture and lab entering Python commands into the REPL in Pane 3 rather than in the editor in Pane 2. In your weekly problem sets, you will spend most of your time entering commands into the editor, testing them with the &ldquo;Run&rdquo; button.</p>
+<p>We will sometimes refer to the REPL as &ldquo;Interactive Python&rdquo; or the &ldquo;Python Sandbox&rdquo;. Resist calling it the &ldquo;Python shell,&rdquo; which you will also sometimes hear, because we&rsquo;ll meet another tool called the &ldquo;shell&rdquo; in a few weeks.</p>
+<p>In our book, we depict commands at the REPL using three greater-than signs, like the following:</p>
+<p><img src="/images/replit/sandbox.png" alt="Textbook excerpt showing Python"></p>
+<p>This is the same as entering the following in replit.com:</p>
+<p><img src="/images/replit/sandbox2.png" alt="replit.com version of textbook snippet"></p>
+<h1 id="mainpy-and-other-files">main.py and other files</h1>
+<p>The green &ldquo;Run&rdquo; button reads a file called <code>main.py</code> for Python commands to run one-at-a-time, from top to bottom. You can also add additional Python files by clicking the add file button and selecting a name for the new file, such as <code>solver.py</code> (all Python files should end .py):</p>
+<p><img src="/images/replit/addfile.png" alt="add file button"></p>
+<p>Typically, our problem sets will require you to solve multiple tasks, each one in a separate file named according to our precise instructions. For example, for your first problem set, Problem Set 0, you will be asked to solve three tasks in files called <code>login_checker1.py,</code> <code>login_checker2.py,</code> and <code>login_checker1.py.</code> When you are working on this problem set, your Files pane will look like this:</p>
+<p><img src="/images/replit/ps0files.png" alt="PS0 files"></p>
+<p>Because the &ldquo;Run&rdquo; button looks only in main.py, you need to add Python instructions to main.py, telling Python to run the commands in the other files. The Python command to do so is <code>import,</code> as follows:</p>
+<p><img src="/images/replit/importcommands.png" alt="Import commands"></p>
+<p>Notice that you omit the <code>.py</code> part of the filename when you use the import command. In this example, clicking &ldquo;Run&rdquo; would first open login_checker1.py and run all of the commands it contains and second open login_checker2.py and run all of the commands it contains. It wouldn&rsquo;t run the commands in login_checker3.py.</p>
+<h1 id="i-dont-have-reliable-internet-what-do-i-do">I don&rsquo;t have reliable internet! What do I do?</h1>
+<p>replit.com requires a browser and an internet connection to work. There is no <a href="https://offline.replit.com/">offline version of replit.com</a>. This means that you can work on the material for this class only when you are connected to a live internet connection. If you don&rsquo;t have reliable internet, what can you do?</p>
+<p>The first, admittedly cold-hearted answer is, you&rsquo;re probably out of luck. replit.com is a key part of this class, so you may struggle to complete the work without reliable internet.</p>
+<p>The second, slightly more charitable answer is we might be able to give you a workaround, one requiring you to install Python and a text editor (we prefer VS Code) on your computer, which will allow you to code completely offline. We really don&rsquo;t recommend it, though! You will constantly be faced to adapt our replit.com-centric examples to your bespoke toolkit, which will add a layer of frustration to the class.</p>
+<p>If you are considering the non-replit.com path, please contact the Professor or Head TA for the class, and we can discuss the pros and cons.</p>
+<p><strong>Disclaimer:</strong> <em>I borrowed liberally from the <a href="https://docs.replit.com/tutorials/01-introduction-to-the-repl-it-ide">replit.com documentation</a>, including lifting a few screenshots wholesale, in creating this page. I assume they won&rsquo;t object because, hey, free marketing! Aside from being a paying customer, I have no relationship with the people who run <a href="https://replit.com">replit.com</a>. If they want to throw me some service credits to thank me for the unsolicited marketing, they should feel free to reach out to me!</em></p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://cp4l.org/post/replit-part1/" data-toggle="tooltip" data-placement="top" title="Moving the class to repl.it, Part One">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:ohm@law.georgetown.edu" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/paulkohm" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/@paulohm" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://paulohm.com">Paul Ohm</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cp4l.org">Computer Programming for Lawyers</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cp4l.org/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://cp4l.org/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

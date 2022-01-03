@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>The First Annual Rock, Papers, Scissors Competition for ICPL - Computer Programming for Lawyers</title>
+  <meta name="description" content="This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little about it in this post. For now, I just wanted to share the homework assignment for next week. I owe a special debt of inspiration to contests like this one: rpscontest.com
+This contest is not open to outside submissions!">
+  <meta name="author" content="Paul Ohm"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Computer Programming for Lawyers",
+    
+    "url": "https:\/\/cp4l.org"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/cp4l.org"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/cp4l.org",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/cp4l.org\/post\/rock-paper-scissors\/",
+          "name": "The first annual rock, papers, scissors competition for i c p l"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Paul Ohm"
+  },
+  "headline": "The First Annual Rock, Papers, Scissors Competition for ICPL",
+  "description" : "This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little about it in this post. For now, I just wanted to share the homework assignment for next week. I owe a special debt of inspiration to contests like this one: rpscontest.com\nThis contest is not open to outside submissions!",
+  "inLanguage" : "en",
+  "wordCount":  625 ,
+  "datePublished" : "2018-03-29T07:43:25",
+  "dateModified" : "2018-03-29T07:43:25",
+  "image" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/cp4l.org\/post\/rock-paper-scissors\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/cp4l.org",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/cp4l.org\/images\/logo_white_on_blue.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="The First Annual Rock, Papers, Scissors Competition for ICPL" />
+<meta property="og:description" content="This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little about it in this post. For now, I just wanted to share the homework assignment for next week. I owe a special debt of inspiration to contests like this one: rpscontest.com
+This contest is not open to outside submissions!">
+<meta property="og:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+<meta property="og:url" content="https://cp4l.org/post/rock-paper-scissors/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Computer Programming for Lawyers" />
+
+  <meta name="twitter:title" content="The First Annual Rock, Papers, Scissors Competition for ICPL" />
+  <meta name="twitter:description" content="This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little …">
+  <meta name="twitter:image" content="https://cp4l.org/images/logo_white_on_blue.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@@paulohm" />
+  <meta name="twitter:creator" content="@@paulohm" />
+  <link href='https://cp4l.org/images/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="alternate" href="https://cp4l.org/index.xml" type="application/rss+xml" title="Computer Programming for Lawyers"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://cp4l.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://cp4l.org/css/syntax.css" /><link rel="stylesheet" href="https://cp4l.org/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cp4l.org">Computer Programming for Lawyers</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="The Team" href="/post/team/">The Team</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Computer Programming for Lawyers" href="https://cp4l.org">
+            <img class="avatar-img" src="https://cp4l.org/images/logo_white_on_blue.jpg" alt="Computer Programming for Lawyers" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>The First Annual Rock, Papers, Scissors Competition for ICPL</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 29, 2018
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Paul Ohm
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>This year, we added a second computer programming course at Georgetown Law, for Intermediate students. I will write more about this course (which I am thoroughly enjoying) later, but I said a little about it <a href="/post/admin-needs">in this post</a>. For now, I just wanted to share the homework assignment for next week. I owe a special debt of inspiration to contests like this one: <a href="http://www.rpscontest.com/">rpscontest.com</a></p>
+<p><strong>This contest is not open to outside submissions! Please don&rsquo;t email me your code!</strong></p>
+<h1 id="icpl-rps-i">ICPL RPS I</h1>
+<p><em>Intermediate Computer Programming for Lawyers 2018</em></p>
+<p>For class on Wednesday, April 4th, we are going to hold the first ever &ldquo;Intermediate Computer Programming for Lawyers: Rock, Paper, Scissors&rdquo; Tournament!!!</p>
+<p>The pedagogical goals are (1) teach some introductory object-oriented programming; and (2) have the students write code that can &ldquo;learn&rdquo; by studying an opponent&rsquo;s program&rsquo;s output.</p>
+<h1 id="tournament-format">Tournament Format</h1>
+<ol>
+<li>
+<p>We will pit computer programs against one another in games of rock-paper-scissors.</p>
+</li>
+<li>
+<p>A pair of programs competing in a <strong>match</strong> will play 1000 individual <strong>games</strong> of rock-paper-scissors in rapid succession.
+This means that a well-designed program may be able to learn its opponent&rsquo;s style during the 1000 games to gain
+an edge.</p>
+</li>
+<li>
+<p>In the first round of the tournament, every program will compete in a match against every other program, round-robin-style.
+Because each human programmer will submit two programs, this means your two programs will compete against one another
+in round one.</p>
+</li>
+<li>
+<p>In the first round, we will not track winners and losers of <em>matches</em>. Instead, we will keep running tallies of
+the cumulative number of individual <em>games</em> you have won, lost, and tied against all of your opponents.</p>
+</li>
+<li>
+<p>After the first round, the sixteen programs that have <em>won</em> the most first-round <em>games</em> cumulative will advance to the second round.</p>
+</li>
+<li>
+<p>In the second round, programs will be seeded, March Madness-style, in a tournament bracket, based on the number of <em>games</em> won in the first round.</p>
+</li>
+<li>
+<p>In the second round, we will play tournament-style, 1000-game, head-to-head, knock-out contests. For each matchup, the program
+that has won more games will advance to face the winner from the other part of the bracket.</p>
+</li>
+<li>
+<p>In either round, in case of ties, the program with more tie games will advance/win/or get the better seed. If that doesn&rsquo;t break the tie,
+we will flip a (virtual) coin).</p>
+</li>
+<li>
+<p>I will invite a few &ldquo;celebrity guests&rdquo; to submit a pair of programs each.</p>
+</li>
+<li>
+<p>The winner will win a prize to be announced during the competition.</p>
+</li>
+</ol>
+<h1 id="competition-specification">Competition Specification</h1>
+<p>You must submit TWO Python programs no later than Tuesday, April 3rd, at 5:30 PM to the Canvas assignment.</p>
+<p>Your two files must strictly conform to the following rules:</p>
+<ol>
+<li>
+<p>Your two files should be named <code>&lt;firstname&gt;A.py</code> and <code>&lt;firstname&gt;B.py</code>.</p>
+</li>
+<li>
+<p>Your file must create a class called <code>rps</code>.</p>
+</li>
+<li>
+<p>At a minimum, your file should have an <code>__init__</code> method and a second method called <code>.shoot()</code>.</p>
+</li>
+<li>
+<p>The <code>.shoot()</code> method must take as an argument a string. This string will always be <code>&quot;R&quot;</code>, <code>&quot;P&quot;</code>, <code>&quot;S&quot;</code>, or <code>&quot;&quot;</code>. This argument
+will tell you your current opponent&rsquo;s very last play. In the first round against an opponent, this argument will be the
+empty string <code>&quot;&quot;</code>.</p>
+</li>
+<li>
+<p>The <code>shoot()</code> method must return an <code>&quot;R&quot;</code>, <code>&quot;P&quot;</code>, or <code>&quot;S&quot;</code> representing your current play.</p>
+</li>
+<li>
+<p>The code that creates your object and calls <code>shoot()</code> won&rsquo;t tell your object the current won/lost/tied stats. If that matters
+to your code, you need to keep track of it yourself. If you want to keep track of your current opponent&rsquo;s past plays,
+you need to remember that yourself.</p>
+</li>
+<li>
+<p>Your code cannot store anything to disk. Every time it faces a new opponent, it will be loaded anew, so you can&rsquo;t rely on
+any strategy that remembers matches from earlier rounds.</p>
+</li>
+<li>
+<p>In case you don&rsquo;t know: <code>&quot;R&quot;</code> beats <code>&quot;S&quot;</code>; <code>&quot;S&quot;</code> beats <code>&quot;P&quot;</code>; and <code>&quot;P&quot;</code> beats <code>&quot;R&quot;</code>.</p>
+</li>
+</ol>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://cp4l.org/post/book/" data-toggle="tooltip" data-placement="top" title="CP4L: The Textbook">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://cp4l.org/post/intermediate/" data-toggle="tooltip" data-placement="top" title="The Intermediate Course, Part 1: Goals and Administrative Details">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:ohm@law.georgetown.edu" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/paulkohm" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/@paulohm" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://paulohm.com">Paul Ohm</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cp4l.org">Computer Programming for Lawyers</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cp4l.org/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://cp4l.org/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
